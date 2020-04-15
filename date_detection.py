@@ -2,10 +2,10 @@
 import re
 import pyinputplus as pyip
 
-input_str = pyip.inputStr(prompt="Please input a string, containing a date: ")
+input_str = pyip.inputStr(prompt="Please input a string, containing a date: ", default='Today is 15/04/2020.')
 
 date_regex = re.compile(r'([0-3][0-9])/([0-1][0-9])/([1-9]+[0-9]*)')
-date_object = date_regex.search(input_str)  # Example: "Today is 15/04/2020"
+date_object = date_regex.search(input_str)  # Example: "Today is 15/04/2020."
 print(f'Readin object -> {date_object}')
 
 day = date_object.group(1)
