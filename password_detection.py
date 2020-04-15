@@ -1,4 +1,5 @@
-"""A regex to make sure the password string containing at least 8 char, both upper- and lower case and at least 1 digit"""
+"""A regex to make sure the password string containing at least 8 char,
+both upper- and lower case and at least 1 digit"""
 import re
 
 valid_pass = "Ab12e45678"
